@@ -1,12 +1,14 @@
 <template>
   <p>{{ data }}</p>
   <p>{{ title }}</p>
+  <p class="counter">Stan licznika: {{ counter }}</p>
 </template>
 
 <script lang="ts" setup>
  const props = withDefaults(
     defineProps<{
-      title?: string
+      title?: string,
+      counter?: number
     }>(),
     {
       title: 'Default Title'
@@ -21,5 +23,9 @@
 <style scoped>
 p {
   color: red;
+}
+
+.counter {
+  color: aquamarine;
 }
 </style>
