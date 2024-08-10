@@ -1,6 +1,6 @@
 <template>
   <!-- <router-link to="/">Home</router-link> -->
-  <FirstComponent />
+  <FirstComponent  />
   <router-view />
 </template>
 
