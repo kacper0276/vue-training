@@ -1,6 +1,6 @@
 <template>
   <!-- <router-link to="/">Home</router-link> -->
-  <FirstComponent title="data" :counter="counter" />
+  <FirstComponent title="data" :counter="counter" :visible="true" />
   <SecondComponent message="test12" />
   <router-view />
 </template>
