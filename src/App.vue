@@ -8,6 +8,8 @@
     <ForProductList />
     <hr />
     <EventDemo />
+    <hr />
+    <OtherDirectives />
     <router-view />
   </div>
 </template>
@@ -18,6 +20,7 @@ import FirstComponent from "@/components/FirstComponent.vue";
 import SecondComponent from "@/components/SecondComponent.vue";
 import ForProductList from "@/components/ForProductList.vue";
 import EventDemo from "./components/EventDemo.vue";
+import OtherDirectives from "./components/OtherDirectives.vue";
 
 let counter = ref(0);
 
