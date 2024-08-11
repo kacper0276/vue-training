@@ -1,18 +1,23 @@
 <template>
-  <!-- <router-link to="/">Home</router-link> -->
-  <FirstComponent title="data" :counter="counter" :visible="true" />
-  <SecondComponent message="test12" />
-
-  <ForProductList />
-
-  <router-view />
+  <div class="container">
+    <!-- <router-link to="/">Home</router-link> -->
+    <FirstComponent title="data" :counter="counter" :visible="true" />
+    <hr />
+    <SecondComponent message="test12" />
+    <hr />
+    <ForProductList />
+    <hr />
+    <EventDemo />
+    <router-view />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
-import FirstComponent from '@/components/FirstComponent.vue';
-import SecondComponent from '@/components/SecondComponent.vue';
-import ForProductList from '@/components/ForProductList.vue';
+import { onMounted, onUnmounted, ref } from "vue";
+import FirstComponent from "@/components/FirstComponent.vue";
+import SecondComponent from "@/components/SecondComponent.vue";
+import ForProductList from "@/components/ForProductList.vue";
+import EventDemo from "./components/EventDemo.vue";
 
 let counter = ref(0);
 
@@ -31,4 +36,10 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>

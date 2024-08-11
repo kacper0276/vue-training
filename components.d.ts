@@ -9,5 +9,6 @@ declare module "@vue/runtime-core" {
     FirstComponent: typeof import("./src/components/FirstComponent.vue")["default"];
     SecondComponent: typeof import("./src/components/SecondComponent.vue")["default"];
     ForProductList: typeof import("./src/components/ForProductList.vue")["default"];
+    EventDemo: typeof import("./src/components/EventDemo.vue")["default"];
   }
 }
