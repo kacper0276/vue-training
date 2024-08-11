@@ -11,5 +11,8 @@ declare module "@vue/runtime-core" {
     ForProductList: typeof import("./src/components/ForProductList.vue")["default"];
     EventDemo: typeof import("./src/components/EventDemo.vue")["default"];
     OtherDirectives: typeof import("./src/components/OtherDirectives.vue")["default"];
+    BaseLayout: typeof import("./src/components/BaseLayout.vue")["default"];
+    ComputedProperties: typeof import("./src/components/ComputedProperties.vue")["default"];
+    TwoWayBinding: typeof import("./src/components/TwoWayBinding.vue")["default"];
   }
 }
