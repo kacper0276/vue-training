@@ -8,5 +8,6 @@ declare module "@vue/runtime-core" {
     RouterView: typeof import("vue-router")["RouterView"];
     FirstComponent: typeof import("./src/components/FirstComponent.vue")["default"];
     SecondComponent: typeof import("./src/components/SecondComponent.vue")["default"];
+    ForProductList: typeof import("./src/components/ForProductList.vue")["default"];
   }
 }

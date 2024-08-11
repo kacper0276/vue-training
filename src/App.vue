@@ -2,6 +2,9 @@
   <!-- <router-link to="/">Home</router-link> -->
   <FirstComponent title="data" :counter="counter" :visible="true" />
   <SecondComponent message="test12" />
+
+  <ForProductList />
+
   <router-view />
 </template>
 
@@ -9,6 +12,7 @@
 import { onMounted, onUnmounted, ref } from 'vue';
 import FirstComponent from '@/components/FirstComponent.vue';
 import SecondComponent from '@/components/SecondComponent.vue';
+import ForProductList from '@/components/ForProductList.vue';
 
 let counter = ref(0);
 
