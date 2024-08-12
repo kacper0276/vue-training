@@ -1,33 +1,42 @@
-# vue-project
+# Vue_Training
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue_Training is a repository designed for learning and understanding the Vue.js framework. It includes various examples and exercises to help you get acquainted with Vue.js and its features for building modern web applications.
 
-## Recommended IDE Setup
+## Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This repository provides examples and projects to help you learn:
+- **Vue.js**: A progressive JavaScript framework for building user interfaces.
+  - Understanding Vue components, directives, and reactive data binding.
+  - Implementing Vue Router for client-side routing.
+  - Managing application state with Vuex.
+  - Building and styling components using Vue's ecosystem and tools.
 
-## Type Support for `.vue` Imports in TS
+## Technologies
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Vue.js**: A JavaScript framework for building interactive user interfaces and single-page applications (SPAs).
+- **Vue Router**: The official router for Vue.js, enabling navigation and routing in Vue applications.
+- **Vuex**: A state management library for Vue.js applications, allowing centralized state management.
 
-## Customize configuration
+## Installation
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+To set up the project locally:
 
-## Project Setup
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/kacper0276/vue-training.git
+    ```
 
-```sh
-npm install
-```
+2. **Navigate to the project directory**:
+    ```bash
+    cd vue-training
+    ```
 
-### Compile and Hot-Reload for Development
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+4. **Start the Vue development server**:
+    ```bash
+    npm run dev
+    ```
