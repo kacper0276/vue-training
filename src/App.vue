@@ -102,7 +102,22 @@
     <FallthroughAttributes />
     <hr />
     <ProvideInject />
-
+    <hr />
+    <Composables />
+    <hr />
+    <CustomDirectives />
+    <hr />
+    <Transitions />
+    <hr />
+    <TransitionGroupComponent />
+    <hr />
+    <p>Routing</p>
+    <nav>
+      <router-link to="/">Strona główna</router-link> |
+      <router-link to="/projects">Projekty</router-link> |
+      <router-link to="/about">O nas</router-link> |
+      <router-link to="/bad-link">Zły link</router-link>
+    </nav>
     <router-view />
   </div>
 </template>
@@ -112,19 +127,23 @@ import { onMounted, onUnmounted, ref } from "vue";
 import FirstComponent from "@/components/FirstComponent.vue";
 import SecondComponent from "@/components/SecondComponent.vue";
 import ForProductList from "@/components/ForProductList.vue";
-import EventDemo from "./components/EventDemo.vue";
-import OtherDirectives from "./components/OtherDirectives.vue";
-import BaseLayout from "./components/BaseLayout.vue";
-import ComputedProperties from "./components/ComputedProperties.vue";
-import TwoWayBinding from "./components/TwoWayBinding.vue";
-import ManyTwoWayBinding from "./components/ManyTwoWayBinding.vue";
-import ClassStyleBinding from "./components/ClassStyleBinding.vue";
-import HooksLifeCycle from "./components/HooksLifeCycle.vue";
-import Ref from "./components/Ref.vue";
-import Watcher from "./components/Watcher.vue";
-import AsyncComponent from "./components/AsyncComponent.vue";
-import FallthroughAttributes from "./components/FallthroughAttributes.vue";
-import ProvideInject from "./components/ProvideInject.vue";
+import EventDemo from "@/components/EventDemo.vue";
+import OtherDirectives from "@/components/OtherDirectives.vue";
+import BaseLayout from "@/components/BaseLayout.vue";
+import ComputedProperties from "@/components/ComputedProperties.vue";
+import TwoWayBinding from "@/components/TwoWayBinding.vue";
+import ManyTwoWayBinding from "@/components/ManyTwoWayBinding.vue";
+import ClassStyleBinding from "@/components/ClassStyleBinding.vue";
+import HooksLifeCycle from "@/components/HooksLifeCycle.vue";
+import Ref from "@/components/Ref.vue";
+import Watcher from "@/components/Watcher.vue";
+import AsyncComponent from "@/components/AsyncComponent.vue";
+import FallthroughAttributes from "@/components/FallthroughAttributes.vue";
+import ProvideInject from "@/components/ProvideInject.vue";
+import Composables from "@/components/Composables.vue";
+import CustomDirectives from "@/components/CustomDirectives.vue";
+import Transitions from "@/components/Transitions.vue";
+import TransitionGroupComponent from "@/components/TransitionGroupComponent.vue";
 
 let counter = ref(0);
 let text = ref("");
