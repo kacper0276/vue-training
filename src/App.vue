@@ -79,6 +79,30 @@
       -->
     <TwoWayBinding v-model="text" />
     <p>Tekst: {{ text }}</p>
+    <hr />
+    <ManyTwoWayBinding
+      v-model:name="userName"
+      v-model:surname="userSurname"
+      v-model:accepted="termsAccepted"
+    />
+    <p>Imię {{ userName }}</p>
+    <p>Nazwisko: {{ userSurname }}</p>
+    <p>Akceptacja: {{ termsAccepted }}</p>
+    <hr />
+    <ClassStyleBinding />
+    <hr />
+    <HooksLifeCycle />
+    <hr />
+    <Ref />
+    <hr />
+    <Watcher />
+    <hr />
+    <AsyncComponent />
+    <hr />
+    <FallthroughAttributes />
+    <hr />
+    <ProvideInject />
+
     <router-view />
   </div>
 </template>
@@ -93,9 +117,22 @@ import OtherDirectives from "./components/OtherDirectives.vue";
 import BaseLayout from "./components/BaseLayout.vue";
 import ComputedProperties from "./components/ComputedProperties.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
+import ManyTwoWayBinding from "./components/ManyTwoWayBinding.vue";
+import ClassStyleBinding from "./components/ClassStyleBinding.vue";
+import HooksLifeCycle from "./components/HooksLifeCycle.vue";
+import Ref from "./components/Ref.vue";
+import Watcher from "./components/Watcher.vue";
+import AsyncComponent from "./components/AsyncComponent.vue";
+import FallthroughAttributes from "./components/FallthroughAttributes.vue";
+import ProvideInject from "./components/ProvideInject.vue";
 
 let counter = ref(0);
 let text = ref("");
+
+// ManyTwoWayBinding
+let userName = ref("");
+let userSurname = ref("");
+let termsAccepted = ref(false);
 
 let intervalId: number | undefined;
 
