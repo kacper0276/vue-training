@@ -26,5 +26,15 @@ declare module "@vue/runtime-core" {
     ProvideInject: typeof import("./src/components/ProvideInject.vue")["default"];
     ProvideInjectChildComponent: typeof import("./src/components/ProvideInjectChildComponent.vue")["default"];
     ProvideInjectMiddleComponent: typeof import("./src/components/ProvideInjectMiddleComponent.vue")["default"];
+    Composables: typeof import("./src/components/Composables.vue")["default"];
+    CustomDirectives: typeof import("./src/components/CustomDirectives.vue")["default"];
+    Transitions: typeof import("./src/components/Transitions.vue")["default"];
+    TransitionGroupComponent: typeof import("./src/components/TransitionGroupComponent.vue")["default"];
+
+    // Routing
+    Home: typeof import("./src/components/routesComponents/Home.vue")["default"];
+    About: typeof import("./src/components/routesComponents/About.vue")["default"];
+    NotFound: typeof import("./src/components/routesComponents/NotFound.vue")["default"];
+    Projects: typeof import("./src/components/routesComponents/Projects.vue")["default"];
   }
 }
