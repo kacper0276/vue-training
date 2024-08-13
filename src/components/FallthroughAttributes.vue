@@ -17,7 +17,7 @@ import FallthroughAttributesCustomButton from "./FallthroughAttributesCustomButt
 
 export default {
   components: {
-    CustomButton,
+    FallthroughAttributesCustomButton,
   },
 };
 </script>
