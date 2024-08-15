@@ -119,6 +119,18 @@
       <router-link to="/bad-link">Zły link</router-link>
     </nav>
     <router-view />
+    <hr />
+    <!--
+        Wszystkie trzy komponenty korzystają z tego samego stanu w sklepie. 
+        Dzięki temu, kiedy wartość count się zmienia, wszystkie komponenty 
+        automatycznie się aktualizują, pokazując nową wartość lub reagując 
+        na zmiany w odpowiedni sposób.
+    -->
+    <div>
+      <DisplayCount />
+      <IncrementButton />
+      <DecrementButton />
+    </div>
   </div>
 </template>
 
@@ -144,6 +156,9 @@ import Composables from "@/components/Composables.vue";
 import CustomDirectives from "@/components/CustomDirectives.vue";
 import Transitions from "@/components/Transitions.vue";
 import TransitionGroupComponent from "@/components/TransitionGroupComponent.vue";
+import DisplayCount from "@/components/DisplayCount.vue";
+import IncrementButton from "@/components/IncrementButton.vue";
+import DecrementButton from "@/components/DecrementButton.vue";
 
 let counter = ref(0);
 let text = ref("");
