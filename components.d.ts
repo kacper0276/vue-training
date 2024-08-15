@@ -30,6 +30,9 @@ declare module "@vue/runtime-core" {
     CustomDirectives: typeof import("./src/components/CustomDirectives.vue")["default"];
     Transitions: typeof import("./src/components/Transitions.vue")["default"];
     TransitionGroupComponent: typeof import("./src/components/TransitionGroupComponent.vue")["default"];
+    DisplayCount: typeof import("./src/components/DisplayCount.vue")["default"];
+    DecrementButton: typeof import("./src/components/DecrementButton.vue")["default"];
+    IncrementButton: typeof import("./src/components/IncrementButton.vue")["default"];
 
     // Routing
     Home: typeof import("./src/components/routesComponents/Home.vue")["default"];
