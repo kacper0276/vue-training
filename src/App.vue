@@ -131,6 +131,8 @@
       <IncrementButton />
       <DecrementButton />
     </div>
+    <hr />
+    <MathjsExample />
   </div>
 </template>
 
@@ -159,6 +161,7 @@ import TransitionGroupComponent from "@/components/TransitionGroupComponent.vue"
 import DisplayCount from "@/components/DisplayCount.vue";
 import IncrementButton from "@/components/IncrementButton.vue";
 import DecrementButton from "@/components/DecrementButton.vue";
+import MathjsExample from "@/components/MathjsExample.vue";
 
 let counter = ref(0);
 let text = ref("");

@@ -33,6 +33,7 @@ declare module "@vue/runtime-core" {
     DisplayCount: typeof import("./src/components/DisplayCount.vue")["default"];
     DecrementButton: typeof import("./src/components/DecrementButton.vue")["default"];
     IncrementButton: typeof import("./src/components/IncrementButton.vue")["default"];
+    MathjsExample: typeof import("./src/components/MathjsExample.vue")["default"];
 
     // Routing
     Home: typeof import("./src/components/routesComponents/Home.vue")["default"];
