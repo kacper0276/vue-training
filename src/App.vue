@@ -133,6 +133,8 @@
     </div>
     <hr />
     <MathjsExample />
+    <hr />
+    <VuexUse />
   </div>
 </template>
 
@@ -162,6 +164,7 @@ import DisplayCount from "@/components/DisplayCount.vue";
 import IncrementButton from "@/components/IncrementButton.vue";
 import DecrementButton from "@/components/DecrementButton.vue";
 import MathjsExample from "@/components/MathjsExample.vue";
+import VuexUse from "@/components/VuexUse.vue";
 
 let counter = ref(0);
 let text = ref("");
